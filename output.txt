@@ -1,0 +1,64 @@
+Motif:MATa1
+
+Promoter:YDL227C
+Pos:405~414
+hit(TGATGTAAAT) = 8.21406
+
+---------------------------------
+Motif:MATalpha2
+
+---------------------------------
+Motif:MCM1
+
+Promoter:YBR093C
+Pos:136~151
+hit(TATCCCAAATGGGTAT) = 9.489
+
+Promoter:YFL026W
+Pos:280~295
+hit(TTTCCTAATTGGGTAA) = 11.3323
+
+Promoter:YKL209C
+Pos:296~311
+hit(TTACCTAATAGGGAAA) = 10.0689
+
+---------------------------------
+Motif:MIG1
+
+Promoter:YLR377C
+Pos:184~200
+hit(TAATATAGTGTGGGGAA) = 10.0445
+
+---------------------------------
+Motif:PHO4
+
+Promoter:YBR093C
+Pos:245~256
+hit(TCCCACGTGTGA) = 8.50812
+
+---------------------------------
+Motif:RCS1
+
+Promoter:YDR270W
+Pos:234~246
+hit(ACTGCACCCGTTC) = 8.94782
+
+Promoter:YDR270W
+Pos:282~294
+hit(ACTGCACCCAGGA) = 10.2288
+
+---------------------------------
+Motif:ROX1
+
+Promoter:YPR065W
+Pos:105~113
+hit(CCTATTGTT) = 8.47559
+
+---------------------------------
+Motif:TAF
+
+Promoter:YJR048W
+Pos:37~51
+hit(CGTGTGAGACGACAT) = 8.78943
+
+---------------------------------

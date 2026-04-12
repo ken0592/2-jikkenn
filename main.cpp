@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <cmath>
+#include <algorithm>
 using namespace std;
 
 double freq_A = 7519429.0 / (7519429 * 2 + 4637676 * 2);
@@ -32,6 +33,8 @@ struct fasta {
     string name;
     string seq;
 };
+
+double p = 7.50341;
 
 int main() {
     //各転写因子の対数オッズスコアの計算
@@ -88,7 +91,51 @@ int main() {
     //各プロモータ配列の取得終了
     
     //各モチーフについて全プロモータ配列を回す
+    ofstream fout ("output.txt");
     for(int i = 0; i < motifs.size(); i++){
-        cout << "Motif:" << motifs.at(i).motif_name << endl << endl;
+        fout << "Motif:" << motifs.at(i).motif_name << endl << endl;
+        for(int j = 0; j < promoter.size(); j++){
+            for(int k = 0; k < promoter.at(j).seq.size() - motifs.at(i).motif_size + 1; k++){
+                double score = 0.0;
+                for(int l = 0; l < motifs.at(i).motif_size; l++){
+                    if(promoter.at(j).seq.at(k+l) == 'A') score += motifs.at(i).s.at(0).at(l);
+                    else if(promoter.at(j).seq.at(k+l) == 'C') score += motifs.at(i).s.at(1).at(l);
+                    else if(promoter.at(j).seq.at(k+l) == 'G') score += motifs.at(i).s.at(2).at(l);
+                    else if(promoter.at(j).seq.at(k+l) == 'T') score += motifs.at(i).s.at(3).at(l);
+                }
+                if(score > p){
+                    fout << "Promoter:" << promoter.at(j).name << endl;
+                    fout << "Pos:" << k+1 << "~" << k+motifs.at(i).motif_size << endl;
+                    fout << "hit(" << promoter.at(j).seq.substr(k, motifs.at(i).motif_size) << ") = " << score << endl << endl;
+                }
+            }
+        }
+        fout << "---------------------------------" << endl;
     }
+    fout.close();
+
+    //閾値決定
+    vector<double> scores;
+    ifstream file2("random_seq.txt");
+    for(int i = 0; i < motifs.size(); i++){
+        while(getline(file2, line)){
+                for(int j = 0; j < 500 - motifs.at(i).motif_size + 1; j++){
+                    double score = 0.0;
+                    for(int k = 0; k < motifs.at(i).motif_size; k++){
+                        if(line.at(j+k) == 'A') score += motifs.at(i).s.at(0).at(k);
+                        else if(line.at(j+k) == 'C') score += motifs.at(i).s.at(1).at(k);
+                        else if(line.at(j+k) == 'G') score += motifs.at(i).s.at(2).at(k);
+                        else if(line.at(j+k) == 'T') score += motifs.at(i).s.at(3).at(k);
+                    }
+                    scores.push_back(score);
+                }
+            }
+    }
+    file2.close();
+
+    sort(scores.begin(), scores.end());
+    ofstream fout2 ("border.txt");
+    fout2 << scores.at(scores.size() - scores.size()/10000) << endl;
+    fout2 << scores.size();
+    fout2.close();
 }
