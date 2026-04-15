@@ -1,104 +1,134 @@
 --------対数オッズ表-------
--0.352486 -0.352486 -0.575629 -0.352486 -0.170164 -0.352486 -0.0160133 
-0.467264 -0.380034 0.600795 -0.785499 -0.380034 0.130791 0.600795 
-0.130791 0.600795 0.600795 0.718578 0.130791 0.130791 -0.380034 
--0.170164 -0.0160133 -0.863311 -0.0160133 0.235301 0.117518 -0.352486 
+-0.170164 -1.96192 -1.96192 -1.96192 -1.96192 -1.96192 1.03381 
+0.467264 1.51709 -1.47865 -0.785499 -1.47865 -1.47865 -1.47865 
+0.130791 -1.47865 1.51709 1.46579 1.51709 -1.47865 -1.47865 
+-0.352486 -1.96192 -1.96192 -1.96192 -1.96192 1.03381 -1.96192 
 --------------------------
 promoter:YNR012W
 
+Pos:120~126
+hit(ACGGGTA) = 7.9145
 --------------------------
 promoter:YJR098C
 
+Pos:44~50
+hit(CCGGGTA) = 8.55193
+Pos:143~149
+hit(CTGGGTA) = 5.07292
 --------------------------
 promoter:YCR032W
 
+Pos:101~107
+hit(ACGGGTG) = 5.40205
+Pos:130~136
+hit(ACGGGTA) = 7.9145
 --------------------------
 promoter:YIR002C
 
+Pos:33~39
+hit(ACGGGTA) = 7.9145
+Pos:71~77
+hit(CCGGGCA) = 6.03947
 --------------------------
 promoter:YMR188C
 
+Pos:130~136
+hit(TGGGGTA) = 4.73645
+Pos:146~152
+hit(CCGGGTA) = 8.55193
 --------------------------
 promoter:YKL058W
 
+Pos:82~88
+hit(CCGGGTA) = 8.55193
 --------------------------
 promoter:YKL059C
 
+Pos:65~71
+hit(GCGGGTA) = 8.21546
+Pos:165~171
+hit(GAGGGTA) = 4.73645
 --------------------------
 promoter:YDR465C
 
+Pos:156~162
+hit(GCGGGTA) = 8.21546
 --------------------------
 promoter:YML120C
 
+Pos:11~17
+hit(ACGGGTA) = 7.9145
+Pos:58~64
+hit(GCCGGTA) = 5.21973
+Pos:78~84
+hit(CAGGGTA) = 5.07292
+Pos:142~148
+hit(TCAGGTA) = 4.25317
 --------------------------
 promoter:YOR149C
 
-Pos:18~24
-hit(CGGGTAA) = 2.70218
-Pos:19~25
-hit(GGGTAAC) = 4.09669
-Pos:20~26
-hit(GGTAACA) = 3.5571
+Pos:17~23
+hit(GCGGGTA) = 8.21546
 --------------------------
 promoter:YNR011W
 
+Pos:98~104
+hit(TCGGGTA) = 7.73218
 --------------------------
 promoter:YJR099C
 
+Pos:6~12
+hit(CCGGGTA) = 8.55193
+Pos:105~111
+hit(CTGGGTA) = 5.07292
+Pos:193~199
+hit(CCGGCTA) = 5.5562
 --------------------------
 promoter:YMR189C
 
+Pos:159~165
+hit(TCGGGTA) = 7.73218
+Pos:175~181
+hit(CCGGGTA) = 8.55193
 --------------------------
 promoter:YIR003C
 
+Pos:11~17
+hit(ACGGGTA) = 7.9145
+Pos:49~55
+hit(CCGGGCA) = 6.03947
 --------------------------
 promoter:YOR336C
 
-Pos:3~9
-hit(GAGGCAC) = 2.82825
-Pos:4~10
-hit(AGGCACT) = 2.49999
-Pos:5~11
-hit(GGCACTC) = 3.81817
-Pos:6~12
-hit(GCACTCA) = 2.55787
-Pos:7~13
-hit(CACTCAC) = 3.12571
+Pos:111~117
+hit(TCGGGTA) = 7.73218
 --------------------------
 promoter:YNL091C
 
-Pos:3~9
-hit(CGCGCGG) = 2.66295
-Pos:4~10
-hit(GCGCGGG) = 2.11055
-Pos:5~11
-hit(CGCGGGT) = 4.40708
 Pos:6~12
-hit(GCGGGTA) = 5.70951
-Pos:7~13
-hit(CGGGTAA) = 7.96374
-Pos:8~14
-hit(GGGTAAA) = 8.74145
-Pos:9~15
-hit(GGTAAAA) = 7.71857
-Pos:10~16
-hit(GTAAAAT) = 6.0301
-Pos:11~17
-hit(TAAAATT) = 4.1742
-Pos:12~18
-hit(AAAATTC) = 3.49473
-Pos:13~19
-hit(AAATTCT) = 2.21173
+hit(GCGGGTA) = 8.21546
+Pos:159~165
+hit(CCGCGTA) = 6.30064
 --------------------------
 promoter:YDR466C
 
+Pos:26~32
+hit(GCGGGTA) = 8.21546
+Pos:83~89
+hit(GCGAGTA) = 4.78774
 --------------------------
 promoter:YIL022C
 
+Pos:100~106
+hit(TCGGGTA) = 7.73218
 --------------------------
 promoter:YGL181W
 
+Pos:117~123
+hit(CCGGGTA) = 8.55193
 --------------------------
 promoter:YFL005W
 
+Pos:128~134
+hit(TCGGGTA) = 7.73218
 --------------------------

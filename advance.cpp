@@ -83,7 +83,10 @@ int main(){
                 s.at(i).at(j) = log(p.at(i).at(j)/q.at(i));
             }
         }
-        if(s_dif < 0.000001) break;
+        //cout << "s_dif" <<  s_dif << endl;
+        //if(s_dif < 0.0001) break;
+        if(count == 100000
+        ) break;
         
         vector <double> scores(promoters.at(N).seq.size()-L+1,0.0);
         for(int i = 0; i < promoters.at(N).seq.size()-L+1; i++){
@@ -122,15 +125,15 @@ int main(){
     double score;
     for(int i = 0; i < promoters.size(); i++){
         fout << "promoter:" << promoters.at(i).name << endl << endl;
-        score = 0.0;
         for(int j = 0; j < promoters.at(i).seq.size()-L+1; j++){
+            score = 0.0;
             for(int k = 0; k < L; k++){
                 if(promoters.at(i).seq.at(j+k) == 'A') score += s.at(0).at(k);
                 else if(promoters.at(i).seq.at(j+k) == 'C') score += s.at(1).at(k);
                 else if(promoters.at(i).seq.at(j+k) == 'G') score += s.at(2).at(k);
                 else if(promoters.at(i).seq.at(j+k) == 'T') score += s.at(3).at(k);
             }
-            if(score > 2.0){
+            if(score > 4.0){
                 fout << "Pos:" << j+1 << "~" << j+L << endl;
                 fout << "hit(" << promoters.at(i).seq.substr(j,L) << ") = " << score << endl;
             }
